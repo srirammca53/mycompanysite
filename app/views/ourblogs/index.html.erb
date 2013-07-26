@@ -1,0 +1,21 @@
+<h1>Listing ourblogs</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ourblogs.each do |ourblog| %>
+  <tr>
+    <td><%= link_to 'Show', ourblog %></td>
+    <td><%= link_to 'Edit', edit_ourblog_path(ourblog) %></td>
+    <td><%= link_to 'Destroy', ourblog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ourblog', new_ourblog_path %>

@@ -1,0 +1,2 @@
+module OurblogsHelper
+end
